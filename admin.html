@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Login</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+rel="stylesheet">
+<script
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;   
+            align-items: center;     
+            background: linear-gradient(135deg,#eef2ff,#f8fafc);
+            font-family: Arial, sans-serif;
+        }
+        .login-form {
+            width: 400px;
+            padding: 40px 30px;
+            border-radius: 20px;
+            background-color: white;
+            text-align: center;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+            height: auto;
+        }
+        .login-form h2 {
+            background-color: #1b2fc6;
+            color: white;
+            margin-bottom: 20px;
+            padding: 12px;
+            border-radius: 8px;
+            font-size: 20px;
+        }
+        .input-group {
+            text-align: left;
+            margin-bottom: 15px;
+        }
+        .input-group input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #00050274;
+            border-radius: 10px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 10px;
+            background-color: #4945c6;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+        button:hover {
+            background-color: #3733a5;
+            font-weight: bold;
+            font-size: medium;
+            font-family: 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="login-form">
+    <h2>Admin Login</h2>
+
+    <form action="studentdetail.html" method="post">
+
+        <div class="input-group">
+            <label>Username</label>
+            <input type="text" name="username" required>
+        </div>
+
+        <div class="input-group">
+            <label>Password</label>
+            <input type="password" name="password" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Login</button>
+    </form>
+    <br>
+    <center>  <a href="index.html" class="btn btn-secondary">Go Home</a></center>
+</div>
+
+
+</body>
+</html>
